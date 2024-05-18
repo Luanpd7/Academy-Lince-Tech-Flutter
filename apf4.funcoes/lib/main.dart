@@ -46,7 +46,7 @@ class _MyHomePageState extends State<MyHomePage> {
       },
       child: Text(nomeBotaoCor),
       style: ElevatedButton.styleFrom(
-          primary: corDoBotao,
+          backgroundColor: corDoBotao,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(20),
           ), //deixando quadrado

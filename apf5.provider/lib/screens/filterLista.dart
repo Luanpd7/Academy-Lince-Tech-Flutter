@@ -12,12 +12,10 @@ class FilterLIst extends StatelessWidget{
       appBar: AppBar(
         title: Text('Filtrando da lista'),
       ),
-      body: Expanded( // Envolve o ListView.builder com Expanded
+      body: Expanded(
           child: Consumer<EstadoListaDePessoas>(
          
             builder: (context, estadoLista, _) {
-              // Verifica se há pessoas na lista
-              //final pessoa = estadoLista.pessoasEcontrada[0];
                return Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
   children: [

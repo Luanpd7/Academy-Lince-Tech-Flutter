@@ -24,33 +24,59 @@ class AddList extends StatelessWidget {
         title: Text('Adicionando a lista'),
       ),
       body: Column(
+      mainAxisSize: MainAxisSize.max,
         children: [
           TextFormField(
             controller: _nomeController,
-            decoration: InputDecoration(
+            decoration: const InputDecoration(
+               enabledBorder: OutlineInputBorder(
+      borderSide: BorderSide(color: Colors.white, width: 2),
+    ),
+    focusedBorder: OutlineInputBorder(
+      borderSide: BorderSide(color: Colors.white, width: 0),
+    ),
               labelText: 'Nome Completo',
             ),
           ),
-          TextFormField(
-            controller: _emailController,
-            decoration: InputDecoration(
-              labelText: 'E-mail',
-            ),
-          ),
+        TextFormField(
+  controller: _emailController,
+  decoration: const InputDecoration(
+    labelText: 'E-mail',
+    enabledBorder: OutlineInputBorder(
+      borderSide: BorderSide(color: Colors.white, width: 2),
+    ),
+    focusedBorder: OutlineInputBorder(
+      borderSide: BorderSide(color: Colors.white, width: 2),
+    ),
+  ),
+),
           TextFormField(
             controller: _telefoneController,
             keyboardType: TextInputType.number,
-            decoration: InputDecoration(
+            decoration: const InputDecoration(
+               enabledBorder: OutlineInputBorder(
+      borderSide: BorderSide(color: Colors.white, width: 2),
+    ),
+    focusedBorder: OutlineInputBorder(
+      borderSide: BorderSide(color: Colors.white, width: 2),
+    ),
               labelText: 'Telefone',
             ),
           ),
           TextFormField(
             controller: _githubController,
-            decoration: InputDecoration(
+            decoration: const InputDecoration(
+               enabledBorder: OutlineInputBorder(
+      borderSide: BorderSide(color: Colors.white, width: 2),
+    ),
+    focusedBorder: OutlineInputBorder(
+      borderSide: BorderSide(color: Colors.white, width: 2),
+    ),
               labelText: 'Link do Github',
             ),
           ),
           DropdownButtonFormField<Object>(
+            
             items: _listaDeValores.map((TipoSanguineo tipo) {
               return DropdownMenuItem<TipoSanguineo>(
                 value: tipo,
@@ -60,7 +86,13 @@ class AddList extends StatelessWidget {
             onChanged: (dynamic novoTipo) {
               _tipoSanguineoController = novoTipo;
             },
-            decoration: InputDecoration(
+            decoration: const InputDecoration(
+               enabledBorder: OutlineInputBorder(
+      borderSide: BorderSide(color: Colors.white, width: 2),
+    ),
+    focusedBorder: OutlineInputBorder(
+      borderSide: BorderSide(color: Colors.white, width: 2),
+    ),
               labelText: 'Tipo Sanguíneo',
             ),
           ),

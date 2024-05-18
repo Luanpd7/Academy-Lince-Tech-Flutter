@@ -108,7 +108,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   });
                 },
                 child: Text('Botão 1'),
-                style: ElevatedButton.styleFrom(primary: corBotao1),
+                style: ElevatedButton.styleFrom(backgroundColor:corBotao1),
               ),
 
               //botao2
@@ -125,7 +125,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   });
                 },
                 child: Text('Botão 2'),
-                style: ElevatedButton.styleFrom(primary: corBotao2),
+                style: ElevatedButton.styleFrom(backgroundColor: corBotao2),
               ),
 
               //botao3
@@ -142,7 +142,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   });
                 },
                 child: Text('Botão 3'),
-                style: ElevatedButton.styleFrom(primary: corBotao3),
+                style: ElevatedButton.styleFrom(backgroundColor: corBotao3),
               ),
               respostaWidget,
             ],

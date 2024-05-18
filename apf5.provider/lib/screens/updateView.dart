@@ -1,4 +1,4 @@
-import 'package:ap1_dart/components/viewItens.dart';
+
 import 'package:ap1_dart/main.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -37,7 +37,13 @@ class UpdateView extends StatelessWidget {
       ),
       body: Consumer<EstadoListaDePessoas>(
         builder: (context, estadoLista, _) {
-          Pessoa pessoa = estadoLista.pessoas[index];
+          if (index >= estadoLista.pessoas.length) {
+            return Center(
+              child: Text('Erro: Índice fora do intervalo.'),
+            );
+          }
+
+          final pessoa = estadoLista.pessoas[index];
           return Column(
             children: [
               TextFormField(
@@ -97,6 +103,8 @@ class UpdateView extends StatelessWidget {
                     git,
                     tipo,
                   );
+
+                  
 
                   Navigator.pop(context); // Voltar para a tela anterior
                 },

@@ -59,7 +59,7 @@ class _MyHomePageState extends State<MyHomePage> {
           
          }, child: Text('Mude a cor aqui'),
            style: ElevatedButton.styleFrom(
-              primary: Colors.blue,),
+              backgroundColor: Colors.blue,),
            
       ),
     

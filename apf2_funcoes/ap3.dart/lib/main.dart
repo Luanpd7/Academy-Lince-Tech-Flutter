@@ -72,7 +72,7 @@ class _MyWidgetState extends State<MyWidget> {
                 textoBotao,
                 style: TextStyle(color: Colors.white),
               ),
-              style: ElevatedButton.styleFrom(primary: Colors.blue),
+              style: ElevatedButton.styleFrom(backgroundColor: Colors.blue),
             ),
             ElevatedButton(
               onPressed: () {
@@ -86,7 +86,7 @@ class _MyWidgetState extends State<MyWidget> {
                 'Cor Aleatoria',
                 style: TextStyle(color: Colors.white),
               ),
-              style: ElevatedButton.styleFrom(primary: Colors.blue),
+              style: ElevatedButton.styleFrom(backgroundColor: Colors.blue),
             ),
           ],
         ),
